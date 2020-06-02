@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8952998d.chunk.css",
+    "main.js": "/static/js/main.bc63cc9b.chunk.js",
+    "main.js.map": "/static/js/main.bc63cc9b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.485bf12e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.485bf12e.js.map",
+    "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
+    "static/js/2.a2088883.chunk.js": "/static/js/2.a2088883.chunk.js",
+    "static/js/2.a2088883.chunk.js.map": "/static/js/2.a2088883.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dd65b9b5ad251d2ae3d94c5cddbe01ba.js": "/precache-manifest.dd65b9b5ad251d2ae3d94c5cddbe01ba.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
+    "static/css/main.8952998d.chunk.css.map": "/static/css/main.8952998d.chunk.css.map",
+    "static/js/2.a2088883.chunk.js.LICENSE.txt": "/static/js/2.a2088883.chunk.js.LICENSE.txt",
+    "static/media/AlexImagePN.png": "/static/media/AlexImagePN.26f7872c.png",
+    "static/media/Gatsby .png": "/static/media/Gatsby .69c1ea5c.png",
+    "static/media/GraphQL.png": "/static/media/GraphQL.8c005987.png",
+    "static/media/Octocat.png": "/static/media/Octocat.0ba2aa20.png",
+    "static/media/React.png": "/static/media/React.580ffd26.png",
+    "static/media/React_logo.png": "/static/media/React_logo.83fb4e93.png",
+    "static/media/Tensorflow.png": "/static/media/Tensorflow.0dfae328.png",
+    "static/media/apple-logo.png": "/static/media/apple-logo.fa84fbee.png",
+    "static/media/auth0.png": "/static/media/auth0.70fa86de.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.04badecd.png",
+    "static/media/mongodb.png": "/static/media/mongodb.ecc6f9e5.png",
+    "static/media/northflank.png": "/static/media/northflank.cacfb5aa.png",
+    "static/media/pandas.png": "/static/media/pandas.ebd58ae0.png",
+    "static/media/spotify-logo-png.png": "/static/media/spotify-logo-png.a162f1ee.png",
+    "static/media/stripe.png": "/static/media/stripe.b7edbdb5.png",
+    "static/media/twitter-logo.png": "/static/media/twitter-logo.3f449766.png",
+    "static/media/webpack.png": "/static/media/webpack.c500a380.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.485bf12e.js",
+    "static/css/2.4707e12a.chunk.css",
+    "static/js/2.a2088883.chunk.js",
+    "static/css/main.8952998d.chunk.css",
+    "static/js/main.bc63cc9b.chunk.js"
+  ]
+}

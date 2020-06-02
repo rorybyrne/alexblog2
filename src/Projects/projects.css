@@ -1,0 +1,295 @@
+html {
+  overflow-x: hidden;
+}
+
+#octocat {
+  height: 200px;
+  width: 250px;
+  display: block;
+  margin: 100px auto;
+}
+
+#connector1 {
+  height: 200px;
+  width: 0px;
+  border: dashed blue;
+  border-width: 1px;
+  margin: 0px auto;
+  transform: translateY(100px);
+}
+
+.ProjectsText {
+  font-weight: bold;
+  color: #04151d;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 20px;
+  border: dashed blue;
+  border-radius: 10px;
+  border-style: dashed;
+  border-width: 1px;
+  margin: 0px 200px 0px 750px;
+}
+
+#colorBlock3 {
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  transform: translateX(1155px) translateY(-70px);
+}
+#colorBlock4 {
+  background-color: salmon;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  transform: translateX(1165px) translateY(-75px);
+}
+
+/* 10 5 */
+
+.grid {
+  width: 1000px;
+  margin: 250px auto;
+}
+
+.grid:hover {
+}
+
+.DownArrow {
+  animation: arrow 0.5s ease-in 3 3s;
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin: 110px auto;
+}
+
+.ProjectsItems {
+  transition: 0.3s ease-in;
+  opacity: 95%;
+  display: inline-block;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+}
+.ProjectsItems:hover {
+  opacity: 100%;
+  display: inline-block;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+  transform: scale(1.1) rotateZ(90deg);
+}
+
+.ProjectsItems h2 {
+  transition: 0.3s ease-in;
+  margin: 20px;
+  font-size: 14px;
+  transition: 0.3s ease-in;
+  color: whitesmoke;
+  width: 200px;
+  height: 300px;
+  height: 20px;
+  opacity: 100%;
+}
+.ProjectsItems:hover h2 {
+  opacity: 0%;
+}
+.ProjectsItems:hover h3 {
+  opacity: 0%;
+}
+
+.ProjectsItems p {
+  transition: 0.3s ease-in;
+  font-size: 12px;
+  transform: translateY(50px) translateX(-30px) rotateZ(-90deg);
+  transition: 0.3s ease-in;
+  color: whitesmoke;
+  width: 200px;
+  height: 300px;
+  height: 20px;
+  opacity: 0%;
+}
+
+.date {
+  transition: 0.3s ease-in;
+  color: gray;
+  font-size: 12px;
+  display: inline-block;
+  margin: 100px 20px 10px 25px;
+  transform: translateY(-10px);
+}
+
+.ProjectsItems:hover p {
+  opacity: 100%;
+}
+
+p.Read {
+  transform: translateY(18px) translateX(130px) rotateZ(-90deg);
+  color: salmon;
+  font-weight: bold;
+}
+
+.TechStack {
+  overflow: hidden;
+  display: block;
+  margin: 50px auto;
+  width: 940px;
+  height: 200px;
+  border: dashed blue;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.TechStack p {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #04151d;
+  margin: 20px;
+}
+
+.TechButtons {
+  overflow: hidden;
+  opacity: 90%;
+  display: inline-block;
+  margin: 5px 5px 5px 5px;
+  width: 100px;
+  height: 40px;
+  background-color: #04151d;
+  border-color: salmon;
+  border: solid;
+  border-width: 1.5px;
+  border-radius: 10px;
+}
+.TechButtons:hover {
+  transition: 0.3s ease-in 0.1s;
+  opacity: 100%;
+  transform: scale(1.1);
+}
+#TechButton1 {
+  margin: 5px 5px 5px 20px;
+}
+#TechButton1 a {
+  display: inline-block;
+  color: whitesmoke;
+  font-size: 10px;
+  text-align: center;
+  transform: translateY(8px);
+}
+
+.TechButtons a {
+  margin: auto;
+  width: 20px;
+  display: inline-block;
+  color: whitesmoke;
+  font-size: 10px;
+  margin: 0px 5px 0px 5px;
+  transform: translateY(8px);
+}
+
+.TechLogos {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  transform: translateY(8px) translateX(33px);
+}
+
+#Node {
+  width: 25px;
+}
+
+#MongoDB {
+  width: 55px;
+  height: 40px;
+  transform: translateY(1px) translateX(24px);
+}
+
+#MongoText {
+  transform: translateY(-15px) translateX(5px);
+}
+
+#stripe {
+  height: 20px;
+  transform: translateX(21px) translateY(9px);
+}
+
+#Auth0 {
+  height: 35px;
+  transform: translateX(28px);
+  display: inline-block;
+  margin-top: 4px;
+}
+
+#TechButton1 #text1 {
+  transform: translateY(-1.1px);
+}
+
+#text1 {
+  transform: translateY(-1.1px);
+}
+
+#auth0 {
+  transform: translateY(-15.1px);
+}
+
+#stripe1 {
+  transform: translateY(4px);
+}
+
+#text2 {
+  transform: translateY(8px);
+}
+
+.form {
+  transform: translateX(-530px) translateY(60px);
+}
+
+#TechButton12 {
+  margin: 30px 5px 5px 20px;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 80%;
+  }
+  50% {
+    opacity: 90%;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .ProjectsText {
+    transform: translateX(520px);
+    margin: auto;
+  }
+  #colorBlock3 {
+    background-color: blue;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    transform: translateX(935px) translateY(-70px);
+  }
+  #colorBlock4 {
+    background-color: salmon;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    transform: translateX(945px) translateY(-75px);
+  }
+  .date {
+    border: transparent;
+  }
+}
+
+/* X 10+ Y 5+ */

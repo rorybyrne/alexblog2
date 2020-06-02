@@ -1,0 +1,115 @@
+.reset {
+  background-color: white;
+}
+
+.BlogSlider {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin: 100px 0px 20px 110px;
+  height: 300px;
+  width: 1000px;
+  border: solid blue;
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 10px;
+}
+
+.BlogSliderItems {
+  transition: 0.3s ease-in;
+  opacity: 95%;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+}
+
+.BlogSliderItems:hover {
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+.BlogSliderItems h3 {
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.BlogSliderItems p {
+  white-space: normal;
+  width: 250px;
+  color: white;
+  margin: 40px 20px 20px 20px;
+  padding-bottom: 4px;
+  overflow-wrap: break-word;
+}
+
+p.ReadMore {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 98px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+p.ReadMore:hover {
+  white-space: normal;
+  width: 98px;
+  color: salmon;
+  margin: 20px;
+  padding-bottom: 4px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px salmon;
+}
+
+p.ReadMore2 {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 160px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+p.ReadMore2:hover {
+  white-space: normal;
+  width: 160px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px salmon;
+}
+
+.ClickArrow {
+  transition: 0.2s ease-in 0.1s;
+  opacity: 90%;
+  border-radius: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  border: transparent;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  transform: translateX(1150px) translateY(-200px);
+}
+.ClickArrow:hover {
+  opacity: 100%;
+  border-radius: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  border: transparent;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  transform: translateX(1150px) translateY(-200px);
+}

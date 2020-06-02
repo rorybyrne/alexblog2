@@ -1,0 +1,231 @@
+/* class styles */
+
+.AlexImage1 {
+  width: 250px;
+  display: inline-block;
+  margin: 160px 0px 20px 60px;
+  position: sticky;
+  animation: AlexImage1;
+  z-index: 2;
+}
+
+.textIntro {
+  color: gray;
+  display: inline-block;
+  transform: translateX(100px) translateY(30px);
+  width: 800.85px;
+  height: 500px;
+  background: #eceff1;
+  border-radius: 69px;
+  clip-path: inset(20% at 40%);
+  z-index: 3;
+}
+
+.textIntroCircle {
+  position: absolute;
+  transform: translateY(150px) translateX(-100px);
+  display: inline-block;
+  background-color: white;
+  width: 300.85px;
+  height: 300px;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.textIntro p {
+  animation: paragraph1 ease-in;
+  font-size: 14px;
+  display: inline-block;
+  color: gray;
+  background-color: #eceff1;
+  font-weight: bold;
+  margin: 30px 30px 30px 150px;
+  transform: translateY(40px);
+}
+
+.textIntro p a:hover {
+  opacity: 60%;
+}
+
+.textIntro .textDescription {
+  color: gray;
+  font-size: 14px;
+}
+
+.textIntro p a {
+  color: #04151d;
+  text-decoration: none;
+  padding-bottom: 5px;
+  background-color: #eceff1;
+  border: solid;
+  border-color: #04151d;
+  border-top: blue;
+  border-left: blue;
+  border-right: blue;
+}
+
+.AlexHomeImageDiv {
+  margin: 50px 0 0 0;
+}
+
+/* .imageUnderline {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: blue;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+
+#underline2 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline4 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline6 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline8 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline10 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline11 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline13 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+} */
+
+.subButton {
+  letter-spacing: 1px;
+  color: #04151d;
+  font-weight: bold;
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  transform: translateX(885px) translateY(-52px);
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: blue;
+  border-right-color: blue;
+  border-left-color: blue;
+  border-width: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.emailInput {
+  outline: none;
+  position: absolute;
+  width: 300px;
+  height: 45px;
+  transform: translateX(560px) translateY(-50px);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: blue;
+  border-right-color: blue;
+  border-left-color: blue;
+  border-width: 1px;
+}
+.subButton p {
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: white;
+  color: #04151d;
+  transition: 0.3s ease-in;
+}
+
+.subButton:hover {
+  color: whitesmoke;
+  background-color: #04151d;
+  border-style: dashed;
+}
+
+.subButton:hover p {
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: #04151d;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ID styles */
+
+#helloWorldText {
+  animation: paragraph1 2s ease-in 0.2s 1 normal;
+  color: #04151d;
+  font-size: 18px;
+}
+
+#paragraph1 {
+  animation: paragraph2 2s ease-in 0.2s 1 normal;
+}
+#paragraph2 {
+  animation: paragraph2 2.2s ease-in 0.2s 1 normal;
+}
+#paragraph3 {
+  animation: paragraph2 2.5s ease-in 0.2s 1 normal;
+}
+
+#emailInput1 {
+  animation: paragraph2 2.8s ease-in 0.2s 1 normal;
+}
+#subButton1 {
+  animation: paragraph2 2s ease-in 0.2s 1 normal;
+}
+
+#colorBlock1 {
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  transform: translateX(1150px) translateY(-475px);
+}
+#colorBlock2 {
+  background-color: salmon;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  transform: translateX(1160px) translateY(-480px);
+}
+
+/* Key Frames */
+
+@keyframes AlexImage1 {
+}
+
+/* Media Queries */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}

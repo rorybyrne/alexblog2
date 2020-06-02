@@ -1,0 +1,230 @@
+/* Class Styles */
+
+.readMore {
+  transition: 0.3s ease-in 0.1s;
+  color: salmon;
+  background-color: #04151d;
+  display: inline-block;
+  margin: 50px 20px 0px 20px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+}
+
+.readMore:hover {
+  border-bottom: 1px solid salmon;
+  padding-bottom: 3px;
+}
+.readMore2 {
+  font-weight: bold;
+  color: #04151d;
+  background-color: salmon;
+  display: inline-block;
+  margin: 50px 20px 0px 20px;
+}
+
+.readMore2:hover {
+  border-bottom: 1px solid salmon;
+  padding-bottom: 3px;
+}
+.readMore3 {
+  font-weight: bold;
+  color: #04151d;
+  background-color: salmon;
+  display: inline-block;
+  margin: 50px 20px 20px 20px;
+}
+
+.readMore3:hover {
+  border-bottom: 1px solid salmon;
+  padding-bottom: 3px;
+}
+
+/* Id Styles */
+
+#readMore2 {
+  margin: 20px 20px 0px 20px;
+}
+
+#writingBlock1 {
+  opacity: 95%;
+  border-radius: 10px;
+  height: 300px;
+  width: 400px;
+  background-color: #04151d;
+  display: inline-block;
+  margin: 40px 20px 10px 120px;
+  box-shadow: 0px 3px 3px #d3d3d3;
+  position: absolute;
+}
+
+#writingBlock1:hover {
+  animation: writingBlock 0.5s ease-in 0.2s forwards;
+}
+
+#writingBlock2 {
+  position: absolute;
+  opacity: 95%;
+  border-radius: 10px;
+  height: 150px;
+  width: 500px;
+  background-color: #04151d;
+  display: inline-block;
+  margin: 95px 20px 10px 550px;
+  box-shadow: 0px 3px 3px #d3d3d3;
+}
+
+#writingBlock2:hover {
+  animation: writingBlock 0.5s ease-in 0.2s forwards;
+}
+#writingBlock3 {
+  position: absolute;
+  opacity: 95%;
+  border-radius: 10px;
+  height: 170px;
+  width: 390px;
+  background-color: #04151d;
+  display: inline-block;
+  margin: 280px 20px 10px 550px;
+  box-shadow: 0px 3px 3px #d3d3d3;
+}
+
+#writingBlock3:hover {
+  animation: writingBlock 0.5s ease-in 0.2s forwards;
+}
+#writingBlock4 {
+  position: absolute;
+  opacity: 95%;
+  border-radius: 10px;
+  height: 130px;
+  width: 190px;
+  background-color: salmon;
+  display: inline-block;
+  margin: 280px 20px 10px 970px;
+  box-shadow: 0px 3px 3px #d3d3d3;
+}
+
+#writingBlock4:hover {
+  animation: seeAllBlock 0.9s ease-in 0.2s forwards;
+}
+
+#post1 {
+  color: whitesmoke;
+  background-color: #04151d;
+}
+
+#writingBlock1 #post1 {
+  background-color: #04151d;
+  display: inline-flex;
+  margin: 20px 0px 0px 20px;
+}
+#writingBlock1 #text1 {
+  color: whitesmoke;
+  background-color: #04151d;
+  display: block;
+  margin: 50px 20px 0px 20px;
+}
+#writingBlock2 #post1 {
+  background-color: #04151d;
+  display: block;
+  margin: 20px 0px 0px 20px;
+}
+#writingBlock2 #text2 {
+  color: whitesmoke;
+  background-color: #04151d;
+  display: block;
+  margin: 20px 20px 0px 20px;
+}
+#writingBlock3 #post1 {
+  background-color: #04151d;
+  display: block;
+  margin: 20px 0px 0px 20px;
+}
+#writingBlock3 #text3 {
+  color: whitesmoke;
+  background-color: #04151d;
+  display: block;
+  margin: 20px 20px 0px 20px;
+}
+
+#writingBlock5 {
+  border-radius: 10px;
+  border-color: blue;
+  border-width: 0.8px;
+  border-style: dashed;
+  background-color: white;
+  transform: translateY(350px);
+  margin: 0 0 100px 120px;
+  width: 397px;
+  height: 98px;
+  font-size: 12px;
+}
+#writingBlock5 p {
+  font-weight: bold;
+  margin: 20px 20px 5px 20px;
+  width: 250px;
+}
+
+#reactImage {
+  transform: translateX(245px) translateY(-87px);
+  position: absolute;
+  background-color: transparent;
+  display: inline-block;
+  width: 140px;
+  height: 100px;
+}
+#reactImage:hover {
+  transition: 3s ease-in;
+  transform: translateX(245px) translateY(-87px) rotateZ(360deg);
+  position: absolute;
+  background-color: transparent;
+  display: inline-block;
+  width: 140px;
+  height: 100px;
+}
+
+#northflankImage {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+/* Key Frames */
+
+@keyframes writingBlock {
+  0% {
+    box-shadow: 0px 3px 3px #d3d3d3;
+    opacity: 95%;
+  }
+  50% {
+    box-shadow: 1px 4px 4.5px #d3d3d3;
+    opacity: 95%;
+    transform: translateY(-5px);
+  }
+  100% {
+    box-shadow: 2px 4.5px 7px #d3d3d3;
+    opacity: 100%;
+    transform: translateY(-7px);
+  }
+}
+@keyframes seeAllBlock {
+  0% {
+    opacity: 90%;
+    transform: translateX(0px);
+  }
+  25% {
+    opacity: 92.5%;
+    transform: translateX(10px);
+  }
+  50% {
+    opacity: 95%;
+    transform: translateX(6px);
+  }
+  75% {
+    opacity: 97.5;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,61 @@
+.imageUnderline {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: blue;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+
+#underline2 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline4 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline6 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline8 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline10 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline11 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline13 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}

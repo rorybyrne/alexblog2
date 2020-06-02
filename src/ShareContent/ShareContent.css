@@ -1,0 +1,58 @@
+a {
+  text-decoration: none;
+  transform: translateY(30px);
+}
+
+#test {
+  transform: translateX(150px) translateY(-73px);
+}
+
+.ShareContent a p {
+  transform: translateY(30px);
+}
+
+.ShareContent {
+  display: inline-block;
+  margin-bottom: 1px;
+}
+
+.ShareLogos {
+  width: 30px;
+  height: 30px;
+  margin: 30px 10px 10px 10px;
+  display: inline-block;
+  transform: translateX(100px);
+}
+
+.twitter-share-button {
+  display: inline-block;
+}
+
+#Tweet {
+  display: inline-block;
+  width: 80px;
+  border: solid #1da1f2;
+  background-color: #1da1f2;
+  border-color: solid #1da1f2;
+  border-width: 0.5px;
+  border-radius: 10px;
+}
+
+#TwitterLogo {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  transform: translateY(-2px) translateX(8px);
+}
+
+a #TweetText {
+  display: inline-block;
+  transform: translateY(-5px);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  border: transparent;
+  margin-left: 17px;
+  margin-bottom: 0px;
+}

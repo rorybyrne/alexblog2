@@ -1,5 +1,2 @@
-# Redirects from what the browser requests to what we serve 
+/*    /index.html   200
 
-/                                                                    /
-/alex-blog/src/Writing/Alex Mackenzie's Blog.html/Writing.js         /Writing           
-/alex-blog/src/Projects/projects.js                                  /Projects          

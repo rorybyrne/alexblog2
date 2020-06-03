@@ -1,3 +1,5 @@
-/                  /
-/Writing           /alex-blog/src/Writing/Alex Mackenzie's Blog.html/Writing.js
-/Projects          /alex-blog/src/Projects/projects.js
+# Redirects from what the browser requests to what we serve 
+
+/                                                                    /
+/alex-blog/src/Writing/Alex Mackenzie's Blog.html/Writing.js         /Writing           
+/alex-blog/src/Projects/projects.js                                  /Projects          

@@ -17,7 +17,7 @@
 
 .BlogSliderItems {
   transition: 0.3s ease-in;
-  opacity: 95%;
+  opacity: 0.95;
   display: inline-block;
   overflow-y: auto;
   overflow-x: hidden;
@@ -30,7 +30,7 @@
 }
 
 .BlogSliderItems:hover {
-  opacity: 100%;
+  opacity: 1;
   transform: scale(1.1);
 }
 
@@ -92,7 +92,7 @@ p.ReadMore2:hover {
 
 .ClickArrow {
   transition: 0.2s ease-in 0.1s;
-  opacity: 90%;
+  opacity: 0.9;
   border-radius: 10px;
   font-size: 40px;
   cursor: pointer;
@@ -103,7 +103,7 @@ p.ReadMore2:hover {
   transform: translateX(1150px) translateY(-200px);
 }
 .ClickArrow:hover {
-  opacity: 100%;
+  opacity: 1;
   border-radius: 10px;
   font-size: 40px;
   cursor: pointer;

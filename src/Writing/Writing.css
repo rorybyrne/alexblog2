@@ -1,0 +1,213 @@
+.underline {
+  transform: translateY(-150px) translateX(-16px);
+  margin: 0px 0px 0px 0px;
+  height: 0px;
+}
+
+.wholePage {
+  margin: 100px 0 0 0;
+  background-color: white;
+}
+
+.readersManual {
+  padding: 15px;
+  color: gray;
+  display: inline-block;
+  font-weight: normal;
+  margin: 20px 20px 20px 88px;
+  width: 1000px;
+}
+
+.para {
+  transform: translateY(-5px);
+}
+
+.youUnderline {
+  display: inline;
+  color: #04151d;
+}
+
+.podcastIconsText {
+  transform: translateY(95px) translateX(-1055px);
+  padding: 15px;
+  background-color: salmon;
+  color: #04151d;
+  font-weight: bold;
+  display: inline-block;
+  font-weight: bold;
+  margin: 20px 20px 5px 20px;
+  width: 150px;
+  text-align: justify;
+  height: 30px;
+  border-radius: 10px;
+}
+.podcastIconsText:hover {
+  animation: textAnimate 0.9s ease-in 0.2s forwards;
+  transform: translateY(95px) translateX(-1055px);
+  justify-content: center;
+  padding: 15px;
+  background-color: salmon;
+  color: #04151d;
+  font-weight: bold;
+  display: inline-block;
+  font-weight: bold;
+  margin: 20px 20px 5px 20px;
+  width: 150px;
+  text-align: justify;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#text1 {
+  transform: translateY(-8px);
+}
+
+.podcastIconsBlock {
+  transform: translateY(-14px) translateX(300px);
+  background-color: #04151d;
+  padding: 15px;
+  color: gray;
+  display: inline-block;
+  font-weight: normal;
+  margin: 20px 20px 0px 20px;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border-color: blue;
+  border-width: 0.8px;
+  border-style: dashed;
+}
+
+.icons {
+  transform: translateY(-5px);
+  margin: 0px 2.5px 100px 15px;
+  width: 40px;
+  height: 40px;
+}
+
+#logo1 {
+  transition: 0.2s ease-in 0s;
+  opacity: 0.95;
+}
+#logo1:hover {
+  opacity: 1;
+  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+}
+
+#logo2 {
+  transition: 0.2s ease-in 0s;
+  opacity: 0.95;
+  margin: 0px 2.5px 100px 30px;
+}
+
+#logo2:hover {
+  opacity: 1;
+  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+}
+
+#logo3 {
+  transition: 0.2s ease-in 0s;
+  opacity: 0.95;
+  margin: 0px 2.5px 100px 30px;
+}
+
+#logo3:hover {
+  opacity: 1;
+  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+}
+
+#logo4 {
+  transition: 0.2s ease-in 0s;
+  opacity: 0.95;
+  margin: 0px 2.5px 100px 30px;
+}
+
+#logo4:hover {
+  opacity: 1;
+  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+}
+
+/* underline */
+
+.imageUnderline {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: blue;
+  margin: 160px 20px 0 25px;
+  transform: translateX(100px);
+}
+
+#underline2 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline4 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline6 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline8 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline10 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline11 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+#underline13 {
+  background-color: salmon;
+  width: 50px;
+  height: 1px;
+  margin: 100px 20px 0 20px;
+  transform: translateX(100px);
+}
+
+.formTest {
+  animation: form 0s;
+  transform: translateY(110px) translateX(-450px);
+  margin-bottom: 50px;
+}
+
+@keyframes textAnimate {
+  0% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.925;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  75% {
+    opacity: 0.975;
+  }
+  100% {
+    opacity: 1;
+  }
+}

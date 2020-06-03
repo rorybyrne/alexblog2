@@ -33,7 +33,6 @@
 }
 
 .textIntro p {
-  animation: paragraph1 ease-in;
   font-size: 14px;
   display: inline-block;
   color: gray;
@@ -43,8 +42,13 @@
   transform: translateY(40px);
 }
 
+.textIntro p a {
+  transition: 0.1s ease-in 0.1s;
+  opacity: 0.95;
+}
+
 .textIntro p a:hover {
-  opacity: 60%;
+  opacity: 1;
 }
 
 .textIntro .textDescription {
@@ -67,65 +71,6 @@
 .AlexHomeImageDiv {
   margin: 50px 0 0 0;
 }
-
-/* .imageUnderline {
-  display: inline-block;
-  width: 50px;
-  height: 1px;
-  background-color: blue;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-
-#underline2 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline4 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline6 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline8 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline10 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline11 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline13 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-} */
 
 .subButton {
   letter-spacing: 1px;
@@ -161,7 +106,7 @@
 .subButton p {
   font-weight: bold;
   letter-spacing: 1px;
-  background-color: white;
+  background-color: transparent;
   color: #04151d;
   transition: 0.3s ease-in;
 }
@@ -175,7 +120,7 @@
 .subButton:hover p {
   font-weight: bold;
   color: whitesmoke;
-  background-color: #04151d;
+  background-color: transparent;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -212,6 +157,7 @@
   position: absolute;
   transform: translateX(1150px) translateY(-475px);
 }
+
 #colorBlock2 {
   background-color: salmon;
   height: 15px;
@@ -221,9 +167,6 @@
 }
 
 /* Key Frames */
-
-@keyframes AlexImage1 {
-}
 
 /* Media Queries */
 

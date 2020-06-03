@@ -19,7 +19,7 @@ import HomeWriting from "../HomeWriting/HomeWriting";
 
 // Pages
 
-import writingBlock from "../pages/Writing /Writing";
+import writingBlock from "../Writing /Writing";
 
 class home extends React.Component {
   render() {

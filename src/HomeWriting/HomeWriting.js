@@ -8,7 +8,7 @@ import northflankImage from "../HomeWriting/northflank.png";
 export default class HomeWriting extends React.Component {
   render() {
     return (
-      <div>
+      <div className="allWritingBlocks">
         <div id="writingBlock1" className="writingBlock">
           <h3 id="post1">Incentives are broken</h3>
           <p id="text1">
@@ -37,9 +37,11 @@ export default class HomeWriting extends React.Component {
             Read more →
           </p>
         </div>
-        <div id="writingBlock4" className="writingBlock">
-          <p class="readMore2">See all posts →</p>
-        </div>
+        <a href="/Writing">
+          <div id="writingBlock4" className="writingBlock">
+            <p class="readMore2">See all posts →</p>
+          </div>
+        </a>
         <div id="writingBlock5" className="writingBlock">
           <p>
             This website was built with React, Substack and Northflank; three
@@ -47,6 +49,7 @@ export default class HomeWriting extends React.Component {
           </p>
           <img id="reactImage" src={reactImage}></img>
         </div>
+        <div className="spacer"></div>
       </div>
     );
   }

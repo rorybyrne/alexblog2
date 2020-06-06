@@ -26,6 +26,7 @@
   border-bottom: 1px solid salmon;
   padding-bottom: 3px;
 }
+
 .readMore3 {
   font-weight: bold;
   color: #04151d;
@@ -184,10 +185,8 @@
   height: 100px;
 }
 
-#northflankImage {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+.spacer {
+  display: none;
 }
 
 /* Key Frames */
@@ -244,5 +243,101 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+/* Media Queries */
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 850px) {
+  .allWritingBlocks {
+    height: 1000px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+
+  #writingBlock1 {
+    height: 370px;
+    width: 340px;
+    position: static;
+    margin: 40px auto 10px auto;
+  }
+  #writingBlock1 #text1 {
+    height: 40%;
+    width: 90%;
+    position: static;
+    margin: 50px auto -30px auto;
+  }
+  #writingBlock2 {
+    height: 220px;
+    width: 340px;
+    position: static;
+    margin: 10px auto;
+  }
+  #writingBlock3 {
+    height: 220px;
+    width: 340px;
+    position: static;
+    margin: 10px auto;
+  }
+  #writingBlock4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: auto;
+    height: 90px;
+    width: 340px;
+    position: static;
+    margin: -19px auto;
+  }
+  #writingBlock4 p {
+    margin: auto;
+  }
+
+  #writingBlock5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 340px;
+    position: static;
+    margin: -280px auto;
+  }
+  #reactImage {
+    position: static;
+    transform: translateX(0px) translateY(0px) rotateZ(0deg);
+    background-color: transparent;
+    width: 140px;
+    height: 100px;
+  }
+  #writingBlock5 p {
+    position: static;
+    width: 160px;
+    height: 80%;
+    margin: auto;
+  }
+  #reactImage:hover {
+    position: static;
+    background-color: transparent;
+    transform: translateX(0px) translateY(0px) rotateZ(0deg);
+    width: 140px;
+    height: 100px;
+  }
+  .readMore2:hover {
+    border-bottom: 0px solid salmon;
+    padding-bottom: 0px;
+  }
+
+  .spacer {
+    display: block;
+    height: 30px;
   }
 }

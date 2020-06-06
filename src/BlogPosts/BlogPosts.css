@@ -3,8 +3,7 @@
 }
 
 .title {
-  display: block;
-  width: 300px;
+  display: inline-block;
   margin: 80px 0px 5px 110px;
   color: #04151d;
   font-weight: bolder;

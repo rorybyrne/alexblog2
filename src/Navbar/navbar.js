@@ -1,8 +1,8 @@
 // Global imports
 import React from "react";
 import ReactDOM from "react-dom";
-import image1 from "./social-media.png";
-import image2 from "./communications.png";
+import image1 from "./twitter.svg";
+import image2 from "./gmail.svg";
 import { Spring } from "react-spring";
 
 // Style imports

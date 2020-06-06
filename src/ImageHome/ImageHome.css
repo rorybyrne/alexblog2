@@ -5,7 +5,6 @@
   display: inline-block;
   margin: 160px 0px 20px 60px;
   position: sticky;
-  animation: AlexImage1;
   z-index: 2;
 }
 
@@ -69,7 +68,7 @@
 }
 
 .AlexHomeImageDiv {
-  margin: 50px 0 0 0;
+  margin: 50px 0 100px 0;
 }
 
 .subButton {
@@ -79,7 +78,7 @@
   position: absolute;
   width: 120px;
   height: 50px;
-  transform: translateX(885px) translateY(-52px);
+  transform: translateX(885px) translateY(-162px);
   border-radius: 5px;
   border-style: dashed;
   border-color: blue;
@@ -95,7 +94,7 @@
   position: absolute;
   width: 300px;
   height: 45px;
-  transform: translateX(560px) translateY(-50px);
+  transform: translateX(560px) translateY(-161px);
   border-radius: 5px;
   border-style: solid;
   border-color: blue;
@@ -123,6 +122,12 @@
   background-color: transparent;
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.underline {
+  overflow: visible;
+  display: block;
+  margin: 50px 50px 50px 50px;
 }
 
 /* ID styles */
@@ -170,5 +175,107 @@
 
 /* Media Queries */
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media (min-width: 320px) and (max-width: 850px) {
+  .AlexHomeImageDiv {
+    align-items: center;
+    align-content: center;
+  }
+
+  .AlexImage1 {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+  .row1.textIntro {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+  .textIntro {
+    transform: translateX(0px) translateY(0px);
+    margin: 50px auto;
+    display: inherit;
+    width: 350.85px; /*50*/
+    height: 450px;
+    text-align: center;
+    background-color: #eceff1;
+    border-radius: 69px;
+  }
+  .textIntro p {
+    font-size: 11px;
+    line-height: 25px;
+    width: 90%;
+    font-size: 14px;
+    display: inline-block;
+    color: gray;
+    background-color: #eceff1;
+    font-weight: bold;
+    margin: 15px auto;
+  }
+  .textIntroCircle {
+    display: none;
+  }
+
+  #colorBlock1 {
+    background-color: blue;
+    height: 15px;
+    width: 15px;
+    margin: -535px 0px 0px 310px;
+    position: absolute;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  #colorBlock2 {
+    background-color: salmon;
+    height: 15px;
+    width: 15px;
+    margin: -540px 0px 0px 320px;
+    position: absolute;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  .formDiv {
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+
+  .formtest {
+    width: 100vw;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .subButton {
+    margin: 0 0 0 10px;
+    position: static;
+    transform: translateX(0) translateY(0);
+    background-color: whitesmoke;
+    width: 110px;
+    height: 100%;
+    z-index: 2;
+  }
+  .subButton P {
+    margin: auto;
+  }
+
+  .emailInput {
+    padding-left: 10px;
+    /* padding: 0; */
+    margin: 0.1px 0 0 0;
+    position: static;
+    width: 200px;
+    height: 95%;
+    transform: translateX(0) translateY(0);
+    z-index: 1;
+  }
+
+  .underline {
+    overflow: hidden;
+  }
 }

@@ -19,7 +19,7 @@
 .burgerNav {
   display: none;
   float: right;
-  display: inline;
+  display: none;
   transform: translateX(-10em) translateY(3.25em);
   width: 30px;
   height: 20x;
@@ -29,8 +29,8 @@
 .navImage1 {
   float: right;
   margin: 50px 230px 0 20px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 30px;
   display: inline-block;
 }
 
@@ -41,9 +41,10 @@
 .navImage2 {
   float: right;
   margin: 50px 50px 0 20px;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
+  width: 40px;
+  height: 30px;
+  /* display: inline-block; */
+  display: none;
 }
 
 .navImage2:hover {
@@ -203,147 +204,43 @@
 
 /* Media Queries */
 
-/*
+/* Laptops */
 
-@media screen and (max-width: 2000px) {
-  .burgerNav {
-    display: none;
-  }
-}
+/* Mobile */
 
-@media screen and (max-width: 768px) {
+/* Iphone 6-7-8+ */
+
+@media (min-width: 320px) and (max-width: 850px) {
   .navBar {
-    background-color: #061e28;
-    position: relative;
-  }
-  .nav-links {
-    background-color: #061e28;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    clip-path: circle(100px at 90% 10%);
-    -webkit-clip-path: circle(100px at 90% 10%);
-    transition: all 1s ease-out;
+    text-align: center;
   }
 
-  .nav-links.open {
-    clip-path: circle(900px at 90% -10%);
-    -webkit-clip-path: circle(900px at 90% -10%);
-  }
-
-  .burgerNav {
-    border: none;
-    display: block;
-    transform: translateX(250px) translateY(-650px);
-    cursor: pointer;
-  }
-
-  #line1 {
-    padding: 0 0 3px 0;
+  .navImage1 {
+    /* 
+    
+    TODO decide what to do with social icons - ideally show them at the bottom
+    
+    display: none; 
+    
+    
+    */
+    position: absolute;
+    transform: translateY(2120px) translateX(-200px);
+    width: 10%;
+    height: 9%;
+    margin-top: 60px;
+    margin-bottom: 50px;
   }
 
   .navItem {
-    color: white;
-    background-color: #061e28;
-    vertical-align: middle;
-  }
-  #navItem1 {
-    border: none;
-    margin: auto;
+    justify-content: center;
+    margin: 50px 20px 20px 20px;
   }
   #navItem2 {
-    border: none;
-    position: absolute;
-    margin: auto;
-  }
-  #navItem3 {
-    margin: auto;
-    border: none;
+    margin: 50px 40px 20px 40px;
   }
 
-  #navItem1:hover {
-    animation: navItem2 0.5s ease-in 0.2s 1 forwards normal;
-  }
-  #navItem2:hover {
-    animation: navItem2 0.5s ease-in 0.2s 1 forwards normal;
-  }
-  #navItem3:hover {
-    animation: navItem2 0.5s ease-in 0.2s 1 forwards normal;
-  }
-
-  @keyframes navItem1 {
-    0% {
-      padding: 0 0 4px 0;
-      transform: translateX(0);
-    }
-    50% {
-      padding: 0 0 4px 0;
-      transform: translateX(0.2em);
-    }
-    70% {
-      padding: 0 0 4px 0;
-      transform: translateX(-0.1em);
-    }
-    100% {
-      border-bottom: #061e28;
-      padding: 0 0 4px 0;
-      transform: translateX(0em);
-    }
-  }
-
-  @keyframes navItem2 {
-    0% {
-      border: none;
-      padding: 0 0 0 0;
-      transform: translateX(0);
-    }
-    50% {
-      border: none;
-      padding: 0 0 0 0;
-      transform: translateX(0.2em);
-    }
-    70% {
-      border: none;
-      padding: 0 0 0 0;
-      transform: translateX(-0.1em);
-    }
-    100% {
-      border: none;
-      padding: 0 0 0 0;
-      transform: translateX(0em);
-    }
-  }
-
-  @keyframes navItem3 {
-    0% {
-      border-bottom: #061e28;
-      padding: 0 0 2.5px 0;
-      transform: translateX(0);
-    }
-    50% {
-      border-bottom: #061e28;
-      padding: 0 0 2.5px 0;
-      transform: translateX(0.2em);
-    }
-    70% {
-      border-bottom: #061e28;
-      padding: 0 0 2.5px 0;
-      transform: translateX(-0.1em);
-    }
-    100% {
-      border-bottom: #061e28;
-      padding: 0 0 2.5px 0;
-      transform: translateX(0em);
-    }
-  }
-  .navImage1 {
-    display: none;
-  }
-  .navImage2 {
-    display: none;
+  .navImage1:hover {
+    animation: none;
   }
 }
-
-*/

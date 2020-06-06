@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.34785c5c.chunk.css",
-    "main.js": "/static/js/main.bd7a785e.chunk.js",
-    "main.js.map": "/static/js/main.bd7a785e.chunk.js.map",
+    "main.css": "/static/css/main.a2af3178.chunk.css",
+    "main.js": "/static/js/main.5cdf03ff.chunk.js",
+    "main.js.map": "/static/js/main.5cdf03ff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.485bf12e.js",
     "runtime-main.js.map": "/static/js/runtime-main.485bf12e.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
     "static/js/2.e199806d.chunk.js": "/static/js/2.e199806d.chunk.js",
     "static/js/2.e199806d.chunk.js.map": "/static/js/2.e199806d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bb5e6e1289127f46294ab2555be00360.js": "/precache-manifest.bb5e6e1289127f46294ab2555be00360.js",
+    "precache-manifest.9881e42f83474efe03eff0583d83ea34.js": "/precache-manifest.9881e42f83474efe03eff0583d83ea34.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.34785c5c.chunk.css.map": "/static/css/main.34785c5c.chunk.css.map",
+    "static/css/main.a2af3178.chunk.css.map": "/static/css/main.a2af3178.chunk.css.map",
     "static/js/2.e199806d.chunk.js.LICENSE.txt": "/static/js/2.e199806d.chunk.js.LICENSE.txt",
     "static/media/AlexImagePN.png": "/static/media/AlexImagePN.26f7872c.png",
     "static/media/Gatsby .png": "/static/media/Gatsby .69c1ea5c.png",
@@ -24,19 +24,21 @@
     "static/media/apple-logo.png": "/static/media/apple-logo.fa84fbee.png",
     "static/media/auth0.png": "/static/media/auth0.70fa86de.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.04badecd.png",
+    "static/media/gmail.svg": "/static/media/gmail.23a7dee5.svg",
     "static/media/mongodb.png": "/static/media/mongodb.ecc6f9e5.png",
     "static/media/northflank.png": "/static/media/northflank.cacfb5aa.png",
     "static/media/pandas.png": "/static/media/pandas.ebd58ae0.png",
     "static/media/spotify-logo-png.png": "/static/media/spotify-logo-png.a162f1ee.png",
     "static/media/stripe.png": "/static/media/stripe.b7edbdb5.png",
     "static/media/twitter-logo.png": "/static/media/twitter-logo.3f449766.png",
+    "static/media/twitter.svg": "/static/media/twitter.2d8eb5e3.svg",
     "static/media/webpack.png": "/static/media/webpack.c500a380.png"
   },
   "entrypoints": [
     "static/js/runtime-main.485bf12e.js",
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.e199806d.chunk.js",
-    "static/css/main.34785c5c.chunk.css",
-    "static/js/main.bd7a785e.chunk.js"
+    "static/css/main.a2af3178.chunk.css",
+    "static/js/main.5cdf03ff.chunk.js"
   ]
 }

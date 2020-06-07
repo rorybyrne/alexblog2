@@ -10,28 +10,26 @@ export default class HomeWriting extends React.Component {
     return (
       <div className="allWritingBlocks">
         <div id="writingBlock1" className="writingBlock">
-          <h3 id="post1">Incentives are broken</h3>
+          <h3 id="post1">Decentralized Corporate Governance</h3>
           <p id="text1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            On the assumption that every founder, board member & employee is a
+            strategic player (yes, even you), what mechanisms can companies
+            design to..
           </p>
           <p class="readMore">Read more →</p>
         </div>
         <div id="writingBlock2" className="writingBlock">
-          <h3 id="post1">Incentives are broken</h3>
-          <p id="text2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </p>
+          <h3 id="post1">Private Index Investing</h3>
+          <p id="text2">How VCs should gain exposure to nascent industries</p>
           <p id="readMore2" class="readMore">
             Read more →
           </p>
         </div>
         <div id="writingBlock3" className="writingBlock">
-          <h3 id="post1">Incentives are broken</h3>
+          <h3 id="post1">Perfect competition is outdated</h3>
           <p id="text3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Technology has the ability to disrupt tried & tested economic
+            frameworks
           </p>
           <p id="readMore2" class="readMore">
             Read more →
@@ -44,12 +42,11 @@ export default class HomeWriting extends React.Component {
         </a>
         <div id="writingBlock5" className="writingBlock">
           <p>
-            This website was built with React, Substack and Northflank; three
+            This website was built with React, Express.js and Netlify; three
             technologies that I'm pretty excited about.
           </p>
           <img id="reactImage" src={reactImage}></img>
         </div>
-        <div className="spacer"></div>
       </div>
     );
   }

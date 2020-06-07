@@ -62,71 +62,6 @@
   transform: translateY(-8px);
 }
 
-.podcastIconsBlock {
-  transform: translateY(-14px) translateX(300px);
-  background-color: #04151d;
-  padding: 15px;
-  color: gray;
-  display: inline-block;
-  font-weight: normal;
-  margin: 20px 20px 0px 20px;
-  width: 300px;
-  height: 30px;
-  border-radius: 10px;
-  border-color: blue;
-  border-width: 0.8px;
-  border-style: dashed;
-}
-
-.icons {
-  transform: translateY(-5px);
-  margin: 0px 2.5px 100px 15px;
-  width: 40px;
-  height: 40px;
-}
-
-#logo1 {
-  transition: 0.2s ease-in 0s;
-  opacity: 0.95;
-}
-#logo1:hover {
-  opacity: 1;
-  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-}
-
-#logo2 {
-  transition: 0.2s ease-in 0s;
-  opacity: 0.95;
-  margin: 0px 2.5px 100px 30px;
-}
-
-#logo2:hover {
-  opacity: 1;
-  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-}
-
-#logo3 {
-  transition: 0.2s ease-in 0s;
-  opacity: 0.95;
-  margin: 0px 2.5px 100px 30px;
-}
-
-#logo3:hover {
-  opacity: 1;
-  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-}
-
-#logo4 {
-  transition: 0.2s ease-in 0s;
-  opacity: 0.95;
-  margin: 0px 2.5px 100px 30px;
-}
-
-#logo4:hover {
-  opacity: 1;
-  transform: translateY(-5px) scaleX(1.2) scaleY(1.2) scaleZ(1.2);
-}
-
 /* underline */
 
 .imageUnderline {
@@ -211,3 +146,40 @@
     opacity: 1;
   }
 }
+
+/* Media Queries */
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 850px) {
+  .wholePage {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .readersManual {
+    padding: 15px;
+    /* display: block; */
+    display: none;
+    font-weight: normal;
+    margin: auto 20px auto 30px;
+    width: 90%;
+    text-align: left;
+  }
+  .para {
+    padding: 15px;
+    /* display: block; */
+    display: none;
+    font-weight: normal;
+    margin: auto 20px auto 30px;
+    width: 90%;
+    text-align: left;
+  }
+}
+
+/* 
+
+TODO media queries for other screens / breaking points
+
+*/

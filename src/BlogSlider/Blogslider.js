@@ -7,28 +7,21 @@ class BlogSlider extends React.Component {
       <div className="reset">
         <div className="BlogSlider">
           <div id="blog1" className="BlogSliderItems">
-            <h3>Title</h3>
-            <p id="para1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              lobortis euismod mi et bibendum.
-            </p>
+            <h3>Private Index Investing</h3>
+            <p id="para1">How VCs should gain exposure to nascent industries</p>
             <p className="ReadMore">Read more →</p>
           </div>
           <div id="blog2" className="BlogSliderItems">
-            <h3>Title</h3>
+            <h3>Perfect Competition is Old</h3>
             <p id="para1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              lobortis euismod mi et bibendum.
+              Technology has disrupted a tried and tested economic framework
             </p>
             <p className="ReadMore">Read more →</p>
           </div>
           <div id="blog3" className="BlogSliderItems">
-            <h3>Title</h3>
-            <p id="para1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              lobortis euismod mi et bibendum.
-            </p>
-            <p className="ReadMore">Read more →</p>
+            <h3>Coming Soon</h3>
+            <p id="para1">Probably something on stablecoins</p>
+            <p className="ReadMore">Coming soon</p>
           </div>
           <div id="blog4" className="BlogSliderItems">
             <h3>Title</h3>

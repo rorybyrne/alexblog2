@@ -78,121 +78,86 @@ class projectsBlock extends React.Component {
         <a href="https://github.com/AlexMackenzieWS">
           <img id="octocat" src={octocat}></img>
         </a>
-        {/* <div id="connector1" className="connector"></div> */}
-        <p className="ProjectsText">
-          Building things so I understand them better.
-        </p>
+        <div className="ProjectsTextBlock">
+          <p className="ProjectsText">Building > Reading.</p>
+        </div>
         <div id="colorBlock3" className="colorBlock"></div>
         <div id="colorBlock4" className="colorBlock"></div>
         <img className="DownArrow" href="#gridId" src={arrow}></img>
         {/* <div id="connector1"></div> */}
         <div id="gridId" className="grid">
           <div className="ProjectsItems">
-            <h2>Title</h2>
+            <h2>The Code For This Blog 🖌</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
+              Built with React, Express.js, MailChimp's API, ReactRouter, React
+              Spring.
+              <br></br>
+              <br></br>
+              Hosted with Netlify.
+              <br></br>
+              <br></br>
+              Thanks to Ruth Sheridan, Luke Byrne, Conor Broderick and Lee
+              Campbell for reviewing, answering questions and showing interest
+              in this.
             </p>
-            <p className="Read">Read more →</p>
+            <a href="https://github.com/AlexMackenzieWS/alexblog2">
+              <p className="Read">Visit Repo →</p>
+            </a>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
-            </p>
-            <p className="Read">Read more →</p>
+            <h2>Building on the Eth Blockchain 🔄</h2>
+            <p>Will soon be writing my first smart contract. V basic.</p>
+            <p className="Read">Visit Repo →</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Title</h2>
+            <h2>E-Commerce Site 👟</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
+              Will primarily be exploring how I can work with payments APIS:
+              Stripe / Shopify.
             </p>
-            <p className="Read">Read more →</p>
+            <p className="Read">Coming Soon</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Title</h2>
+            <h2>Adding Authentication, a Database and Search 🔎</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
+              Enabling individuals to create accounts, receive unique access
+              based on these accounts and being able to search others within the
+              platform based on this access.
             </p>
-            <p className="Read">Read more →</p>
+            <p className="Read">Coming Soon</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
-            </p>
-            <p className="Read">Read more →</p>
+            <h2>Coming Soon</h2>
+            <p className="ComingSoonText">🤖🧑🏼‍💻⚒</p>
+            <p className="Read">Coming Soon</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
-            </p>
-            <p className="Read">Read more →</p>
+            <h2>Coming Soon</h2>
+            <p className="ComingSoonText"> 🤖🧑🏼‍💻⚒</p>
+            <p className="Read">Coming Soon</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Coming soon</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
-            </p>
-            <p className="Read">Read more →</p>
+            <h2>Coming Soon</h2>
+            <p className="ComingSoonText">🤖🧑🏼‍💻⚒</p>
+            <p className="Read">Coming Soon</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Coming soon</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
-            </p>
-            <p className="Read">Read more →</p>
+            <h2>Coming Soon</h2>
+            <p className="ComingSoonText">🤖🧑🏼‍💻⚒</p>
+            <p className="Read">Coming Soon</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="ProjectsItems">
-            <h2>Coming soon</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              fringilla lacus ac enim rhoncus, semper venenatis arcu tristique.
-              Donec cursus elementum fermentum. Nunc eros tellus, commodo eu
-              eros at, rutrum rhoncus augue. Pellentesque non leo sed nisi
-              pellentesque ornare.
-            </p>
-            <p className="Read">Read more →</p>
+            <h2>Coming Soon</h2>
+            <p className="ComingSoonText">🤖🧑🏼‍💻⚒</p>
+            <p className="Read">Coming Soon</p>
             <h3 className="date">31/5/20</h3>
           </div>
           <div className="TechStack">
@@ -233,7 +198,7 @@ class projectsBlock extends React.Component {
               </a>
               <img id="Node" className="TechLogos" src={webpack}></img>
             </div>
-            <div className="TechButtons">
+            <div id="Mongo" className="TechButtons">
               <a id="MongoText" href="https://www.mongodb.com/">
                 MongoDB
               </a>

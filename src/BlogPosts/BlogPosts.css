@@ -25,9 +25,35 @@ p.date {
   transform: translateY(-20px);
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .title {
+@media (min-width: 320px) and (max-width: 850px) {
+  .post1 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
-  .date {
+
+  .title {
+    display: inline-block;
+    margin: auto auto;
+    color: #04151d;
+    font-weight: bolder;
+    font-size: 19px;
+    background-color: white;
+    border-bottom: solid #04151d;
+  }
+  p.date {
+    margin: 30px auto;
+    display: inline-block;
+  }
+  .paragraphs {
+    text-align: justify;
+    line-height: 30px;
+    color: #04151d;
+    width: 80%;
+    margin: auto auto 20px auto;
+  }
+  .navImage1 {
+    display: none;
   }
 }

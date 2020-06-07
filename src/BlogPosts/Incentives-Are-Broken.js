@@ -6,7 +6,7 @@ class IncentivesAreBroken extends React.Component {
   render() {
     return (
       <div className="post1">
-        <h2 className="title">Incentives are Broken</h2>
+        <h2 className="title">Decentralized Corporate Governance</h2>
         <p className="date">28/5/20 - Thanks to X, Y and Z for reading</p>
         <ShareContent></ShareContent>
         <p className="paragraphs">

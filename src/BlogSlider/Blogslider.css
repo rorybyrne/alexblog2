@@ -113,3 +113,60 @@ p.ReadMore2:hover {
   display: inline-block;
   transform: translateX(1150px) translateY(-200px);
 }
+
+@media (min-width: 320px) and (max-width: 850px) {
+  .reset {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center`;
+    width: 100vh;
+  }
+
+  .BlogSlider {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 350px;
+    border: solid blue;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 10px;
+    margin-bottom: 60px;
+  }
+  .BlogSliderItems {
+    transition: 0.3s ease-in;
+    transform: scale(1);
+    opacity: 1;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 22px 25px 30px 30px;
+    height: 250px;
+    width: 285px;
+    background-color: #04151d;
+    border: solid salmon;
+    border-radius: 10px;
+  }
+
+  .ClickArrow {
+    display: none;
+  }
+
+  .BlogSliderItems h3 {
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .BlogSliderItems p {
+    opacity: 1;
+  }
+
+  p.ReadMore {
+    opacity: 1;
+  }
+}

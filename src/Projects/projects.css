@@ -11,6 +11,8 @@ html {
 
 .ProjectsText {
   font-weight: bold;
+  width: 20vw;
+  text-align: center;
   color: #04151d;
   letter-spacing: 1px;
   display: inline-block;
@@ -20,6 +22,8 @@ html {
   border-style: dashed;
   border-width: 1px;
   margin: 0px 200px 0px 750px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #colorBlock3 {
@@ -36,8 +40,6 @@ html {
   position: absolute;
   transform: translateX(1165px) translateY(-75px);
 }
-
-/* 10 5 */
 
 .grid {
   width: 1000px;
@@ -108,6 +110,13 @@ html {
   opacity: 0;
 }
 
+.ComingSoonText {
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
 .date {
   transition: 0.3s ease-in;
   color: gray;
@@ -122,7 +131,7 @@ html {
 }
 
 p.Read {
-  transform: translateY(18px) translateX(130px) rotateZ(-90deg);
+  transform: translateY(18px) translateX(160px) rotateZ(-90deg);
   color: salmon;
   font-weight: bold;
 }
@@ -245,6 +254,8 @@ p.Read {
   margin: 30px 5px 5px 20px;
 }
 
+/* Keyframes */
+
 @keyframes arrow {
   0% {
     opacity: 0.8;
@@ -259,10 +270,143 @@ p.Read {
   }
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+/* Media Queries */
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 850px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  /* 
+  
+  had issues with the page overflowing on the x-axis, primarily based on width of the TechStack div
+  
+  TODO reduce Techstack div's width & then to remobe this html styling. 
+  
+  */
+
+  #octocat {
+    width: 170px;
+    height: 150px;
+  }
+
+  /* Shrunk octocat vs. laptop size */
+
+  .WholePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #colorBlock3 {
+    background-color: blue;
+    display: none;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    transform: translateX(1155px) translateY(-70px);
+  }
+  #colorBlock4 {
+    background-color: salmon;
+    display: none;
+    height: 15px;
+    width: 15px;
+    position: static;
+    transform: translateX(0px) translateY(-50px);
+    margin-left: 80vw;
+    z-index: 1;
+  }
+
+  /* Projects Grid Styling */
+
+  .ProjectsTextBlock {
+    width: 100vw;
+    display: block;
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+
   .ProjectsText {
-    transform: translateX(520px);
     margin: auto;
+    display: inline;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  .DownArrow {
+    animation: arrow 0.5s ease-in 3 3s;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 110px auto;
+  }
+
+  .grid {
+    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .ProjectsItems {
+    transition: 0.4s ease-in;
+    opacity: 0.95;
+    display: block;
+    margin: 0px auto 30px auto;
+    height: 230px;
+    width: 70vw;
+    background-color: #04151d;
+    border: solid salmon;
+    border-radius: 10px;
+  }
+  .date {
+    transition: 0.3s ease-in;
+    color: gray;
+    font-size: 12px;
+    display: inline-block;
+    margin: 100px 20px 10px 25px;
+    transform: translateY(-30px);
+  }
+
+  /* End of Projects Grid styling */
+
+  /* Tech stack styling */
+
+  .TechStack {
+    display: none;
+  }
+
+  /* hover effects */
+
+  .ProjectsItems:hover {
+    opacity: 1;
+    display: block;
+    margin: 50px auto 50px auto;
+    height: 250px;
+    width: 285px;
+    background-color: #04151d;
+    border: solid salmon;
+    border-radius: 10px;
+    transform: scale(1.1) rotateZ(90deg);
+  }
+}
+
+/* Laptop */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .ProjectsTextBlock {
+    display: block;
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ProjectsText {
+    margin: auto;
+    display: inline;
+    transform: translateX(0px) translateY(0px);
   }
   #colorBlock3 {
     background-color: blue;

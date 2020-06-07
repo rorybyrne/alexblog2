@@ -47,6 +47,7 @@
 }
 
 #writingBlock1 {
+  line-height: 25px;
   opacity: 0.95;
   border-radius: 10px;
   height: 300px;
@@ -63,6 +64,7 @@
 }
 
 #writingBlock2 {
+  line-height: 25px;
   position: absolute;
   opacity: 0.95;
   border-radius: 10px;
@@ -79,6 +81,7 @@
   animation: writingBlock 0.5s ease-in 0.2s forwards;
 }
 #writingBlock3 {
+  line-height: 25px;
   position: absolute;
   opacity: 0.95;
   border-radius: 10px;
@@ -95,6 +98,7 @@
   animation: writingBlock 0.5s ease-in 0.2s forwards;
 }
 #writingBlock4 {
+  line-height: 25px;
   position: absolute;
   opacity: 0.95;
   border-radius: 10px;
@@ -263,6 +267,7 @@
   }
 
   #writingBlock1 {
+    line-height: 25px;
     height: 370px;
     width: 340px;
     position: static;
@@ -275,18 +280,21 @@
     margin: 50px auto -30px auto;
   }
   #writingBlock2 {
+    line-height: 25px;
     height: 220px;
     width: 340px;
     position: static;
     margin: 10px auto;
   }
   #writingBlock3 {
+    line-height: 25px;
     height: 220px;
     width: 340px;
     position: static;
     margin: 10px auto;
   }
   #writingBlock4 {
+    line-height: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -309,7 +317,7 @@
     height: 90px;
     width: 340px;
     position: static;
-    margin: -280px auto;
+    margin: -280px auto 100px auto;
   }
   #reactImage {
     position: static;
@@ -336,8 +344,13 @@
     padding-bottom: 0px;
   }
 
-  .spacer {
-    display: block;
-    height: 30px;
+  #navImage1 {
+    display: none;
   }
 }
+
+/* 
+
+TODO media queries for other screens / breaking points
+
+*/

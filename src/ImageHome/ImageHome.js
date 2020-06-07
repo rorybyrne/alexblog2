@@ -68,7 +68,7 @@ class ImageHome extends React.Component {
               <br></br>
               <p id="paragraph2">
                 Welcome to the grand conclave of my interest set: Programming,
-                crypto, open-source, venture, psychology, startups mexican food.
+                crypto, economics, venture, psychology, startups mexican food.
               </p>
               <br></br>
               <p id="paragraph3" className=" textDescription">

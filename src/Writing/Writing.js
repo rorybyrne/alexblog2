@@ -13,12 +13,7 @@ import IncentivesAreBroken from "../BlogPosts/Incentives-Are-Broken";
 
 import "./Writing.css";
 
-// image imports
-
-// import icon1 from "./spotify-logo-png.png";
-// import icon2 from "./apple-logo.png";
-// import icon3 from "./youtube-logo.png";
-// import icon4 from "./anchor-logo.png";
+// Component
 
 class writingBlock extends React.Component {
   constructor(props) {

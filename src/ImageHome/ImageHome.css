@@ -90,6 +90,7 @@
 }
 
 .emailInput {
+  padding-left: 10px;
   outline: none;
   position: absolute;
   width: 300px;
@@ -266,11 +267,10 @@
 
   .emailInput {
     padding-left: 10px;
-    /* padding: 0; */
     margin: 0.1px 0 0 0;
     position: static;
     width: 200px;
-    height: 95%;
+    height: 92%;
     transform: translateX(0) translateY(0);
     z-index: 1;
   }
@@ -279,3 +279,9 @@
     overflow: hidden;
   }
 }
+
+/* 
+
+TODO media queries for other screens / breaking points
+
+*/

@@ -215,32 +215,27 @@
     text-align: center;
   }
 
-  .navImage1 {
-    /* 
-    
-    TODO decide what to do with social icons - ideally show them at the bottom
-    
-    display: none; 
-    
-    
-    */
-    position: absolute;
-    transform: translateY(2120px) translateX(-200px);
-    width: 10%;
-    height: 9%;
-    margin-top: 60px;
-    margin-bottom: 50px;
-  }
-
   .navItem {
     justify-content: center;
     margin: 50px 20px 20px 20px;
   }
+
+  #navImage1 {
+    display: none;
+  }
+
   #navItem2 {
     margin: 50px 40px 20px 40px;
   }
 
   .navImage1:hover {
     animation: none;
+    display: none;
   }
 }
+
+/* 
+
+TODO media queries for other screens / breaking points
+
+*/

@@ -4,9 +4,9 @@
 
 .BlogSlider {
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: hidden;
   white-space: nowrap;
-  margin: 100px 0px 20px 110px;
+  margin: 50px auto 0px auto;
   height: 300px;
   width: 1000px;
   border: solid blue;
@@ -100,7 +100,19 @@ p.ReadMore2:hover {
   width: 60px;
   height: 60px;
   display: inline-block;
-  transform: translateX(1150px) translateY(-200px);
+  transform: translateX(1250px) translateY(-200px);
+}
+.ClickArrow2 {
+  transition: 0.2s ease-in 0.1s;
+  opacity: 0.9;
+  border-radius: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  border: transparent;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  transform: translateX(1250px) translateY(-200px);
 }
 .ClickArrow:hover {
   opacity: 1;
@@ -111,8 +123,292 @@ p.ReadMore2:hover {
   width: 60px;
   height: 60px;
   display: inline-block;
-  transform: translateX(1150px) translateY(-200px);
 }
+
+/* On Click Style Changes */
+
+/* Right -- Clicker 2 */
+
+.BlogSliderItems2 {
+  transition: 0.3s ease-in;
+  opacity: 0.95;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+  transform: translateX(-320px);
+}
+
+.BlogSliderItems2 h3 {
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  transform: translateX(0px);
+}
+
+.BlogSliderItems2 p {
+  white-space: normal;
+  width: 250px;
+  color: white;
+  margin: 40px 20px 20px 20px;
+  padding-bottom: 4px;
+  overflow-wrap: break-word;
+  transform: translateX(0px);
+}
+
+p.ReadMore {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 98px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+.BlogSliderItems2 p.ReadMore2 {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 160px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+/* Left -- Clicker 2 */
+
+.BlogSliderItems2Left {
+  transition: 0.3s ease-in;
+  opacity: 0.95;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+  transform: translateX(-320px);
+}
+
+.BlogSliderItems2Left h3 {
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  transform: translateX(0px);
+}
+
+.BlogSliderItems2Left p {
+  white-space: normal;
+  width: 250px;
+  color: white;
+  margin: 40px 20px 20px 20px;
+  padding-bottom: 4px;
+  overflow-wrap: break-word;
+  transform: translateX(0px);
+}
+
+p.ReadMore {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 98px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+.BlogSliderItems2Left p.ReadMore2 {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 160px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+/* Right -- Clicker 3 */
+
+.BlogSliderItems3 {
+  transition: 0.3s ease-in;
+  opacity: 0.95;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+  transform: translateX(-660px);
+}
+
+.BlogSliderItems3 h3 {
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  transform: translateX(0px);
+}
+
+.BlogSliderItems3 p {
+  white-space: normal;
+  width: 250px;
+  color: white;
+  margin: 40px 20px 20px 20px;
+  padding-bottom: 4px;
+  overflow-wrap: break-word;
+  transform: translateX(0px);
+}
+
+p.ReadMore {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 98px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+.BlogSliderItems3 p.ReadMore2 {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 160px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+/* Left -- Clicker 3 */
+
+.BlogSliderItems3Left {
+  transition: 0.3s ease-in;
+  opacity: 0.95;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+  transform: translateX(-660px);
+}
+
+.BlogSliderItems3Left h3 {
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  transform: translateX(0px);
+}
+
+.BlogSliderItems3Left p {
+  white-space: normal;
+  width: 250px;
+  color: white;
+  margin: 40px 20px 20px 20px;
+  padding-bottom: 4px;
+  overflow-wrap: break-word;
+  transform: translateX(0px);
+}
+
+p.ReadMore {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 98px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+.BlogSliderItems3Left p.ReadMore2 {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 160px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+.BlogSliderItems4 {
+  transition: 0.3s ease-in;
+  opacity: 0.95;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 22px 10px 20px 27px;
+  height: 250px;
+  width: 285px;
+  background-color: #04151d;
+  border: solid salmon;
+  border-radius: 10px;
+  transform: translateX(-985px);
+}
+
+.BlogSliderItems4 h3 {
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  transform: translateX(0px);
+}
+
+.BlogSliderItems4 p {
+  white-space: normal;
+  width: 250px;
+  color: white;
+  margin: 40px 20px 20px 20px;
+  padding-bottom: 4px;
+  overflow-wrap: break-word;
+  transform: translateX(0px);
+}
+
+p.ReadMore {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 98px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+.BlogSliderItems4 p.ReadMore2 {
+  transition: 0.3s ease-in 0.1s;
+  white-space: normal;
+  width: 160px;
+  color: salmon;
+  margin: 20px;
+  overflow-wrap: break-word;
+  margin: 40px 20px 20px 20px;
+  border-bottom: solid 0.5px transparent;
+}
+
+.Back-Arrow-Paragraph {
+  display: inline;
+}
+
+/* Mobile Media Query */
 
 @media (min-width: 320px) and (max-width: 850px) {
   .reset {
@@ -136,6 +432,7 @@ p.ReadMore2:hover {
     border-style: dashed;
     border-radius: 10px;
     margin-bottom: 60px;
+    padding-top: 0px;
   }
   .BlogSliderItems {
     transition: 0.3s ease-in;
@@ -168,5 +465,39 @@ p.ReadMore2:hover {
 
   p.ReadMore {
     opacity: 1;
+  }
+
+  /*  Was having some issues getting the individual blog posts to align with one another on mobile -- fixed!! */
+}
+
+@media (min-width: 850px) and (max-width: 1150px) {
+  .BlogSlider {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 700px;
+    border: solid blue;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    padding-top: 0px;
+  }
+  .BlogSliderItems {
+    transition: 0.3s ease-in;
+    transform: scale(1);
+    opacity: 1;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 22px 25px 30px 30px;
+    height: 250px;
+    width: 285px;
+    background-color: #04151d;
+    border: solid salmon;
+    border-radius: 10px;
   }
 }

@@ -16,38 +16,27 @@
   padding: 0 0 2.5px 0;
 }
 
-.burgerNav {
-  display: none;
+.TwitterImage {
   float: right;
-  display: none;
-  transform: translateX(-10em) translateY(3.25em);
-  width: 30px;
-  height: 20x;
-  cursor: pointer;
-}
-
-.navImage1 {
-  float: right;
-  margin: 50px 230px 0 20px;
+  margin: 50px 80px 0 20px;
   width: 40px;
   height: 30px;
   display: inline-block;
 }
 
-.navImage1:hover {
+.TwitterImage:hover {
   animation: navImage1 0.5s ease-in 0.2s 1 forwards normal;
 }
 
-.navImage2 {
+.GmailImage {
   float: right;
-  margin: 50px 50px 0 20px;
+  margin: 50px 80px 0 20px;
   width: 40px;
   height: 30px;
-  /* display: inline-block; */
-  display: none;
+  display: inline-block;
 }
 
-.navImage2:hover {
+.GmailImage:hover {
   animation: navImage2 0.5s ease-in 0.2s 1 forwards normal;
 }
 
@@ -86,40 +75,6 @@
 
 #navItem4:hover {
   animation: navItem2 0.5s ease-in 0.2s 1 forwards normal;
-}
-
-#line1 {
-  display: none;
-  border-bottom: #04151d;
-  border-bottom: solid;
-  padding: 2.5 0 2.5px 0;
-}
-#line2 {
-  display: none;
-  border-bottom: #04151d;
-  border-bottom: solid;
-  padding: 0 0 2.5px 0;
-}
-#line3 {
-  display: none;
-  border-bottom: #04151d;
-  border-bottom: solid;
-  padding: 0 0 3.5px 0;
-}
-
-#burgerNav1:hover {
-  background-color: transparent;
-  animation: burgerNav1 0.5s ease-in 0.2s 1 forwards normal;
-  border-bottom: #04151d;
-  border-bottom: solid;
-  padding: 0 0 2.5px 0;
-}
-#burgerNav2:hover {
-  background-color: transparent;
-  animation: burgerNav2 0.5s ease-in 0.2s 1 forwards normal;
-  border-bottom: #04151d;
-  border-bottom: solid;
-  padding: 0 0 2.5px 0;
 }
 
 /* Keyframes */
@@ -208,9 +163,7 @@
 
 /* Mobile */
 
-/* Iphone 6-7-8+ */
-
-@media (min-width: 320px) and (max-width: 850px) {
+@media (min-width: 320px) and (max-width: 750px) {
   .navBar {
     text-align: center;
   }
@@ -220,22 +173,22 @@
     margin: 50px 20px 20px 20px;
   }
 
-  #navImage1 {
+  .TwitterImage {
     display: none;
   }
 
-  #navItem2 {
-    margin: 50px 40px 20px 40px;
-  }
-
-  .navImage1:hover {
-    animation: none;
+  .GmailImage {
     display: none;
   }
 }
 
-/* 
+/* Other Screen */
 
-TODO media queries for other screens / breaking points
-
-*/
+@media (min-width: 750px) and (max-width: 1000px) {
+  .TwitterImage {
+    display: inline-block;
+  }
+  .GmailImage {
+    display: none;
+  }
+}

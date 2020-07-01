@@ -4,6 +4,12 @@
   height: 0px;
 }
 
+#navItem1 {
+  border-bottom: #04151d;
+  border-bottom: solid;
+  padding: 0 0 2.5px 0;
+}
+
 .wholePage {
   margin: 100px 0 0 0;
   background-color: white;
@@ -64,69 +70,15 @@
 
 /* underline */
 
-.imageUnderline {
-  display: inline-block;
-  width: 50px;
-  height: 1px;
-  background-color: blue;
-  margin: 160px 20px 0 25px;
-  transform: translateX(100px);
-}
-
-#underline2 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline4 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline6 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline8 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline10 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline11 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-#underline13 {
-  background-color: salmon;
-  width: 50px;
-  height: 1px;
-  margin: 100px 20px 0 20px;
-  transform: translateX(100px);
-}
-
-.formTest {
+.form2 {
   animation: form 0s;
-  transform: translateY(110px) translateX(-450px);
-  margin-bottom: 50px;
+  position: static;
+  /* transform: translateY(210px) translateX(-450px); */
+  width: 100vww;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  transform: translateY(150px);
 }
 
 @keyframes textAnimate {
@@ -151,7 +103,7 @@
 
 /* Mobile */
 
-@media (min-width: 320px) and (max-width: 850px) {
+@media (min-width: 320px) and (max-width: 1350px) {
   .wholePage {
     overflow-x: hidden;
     display: flex;
@@ -175,6 +127,58 @@
     margin: auto 20px auto 30px;
     width: 90%;
     text-align: left;
+  }
+
+  .form2 {
+    display: block;
+    transform: translateY(0px) translateX(-0px);
+    text-align: center;
+    width: 100vw;
+    height: 38px;
+    margin-bottom: 40px;
+  }
+
+  .form2.emailInput {
+    margin-left: 20px;
+  }
+
+  .subButton2 {
+    transition: 0.3s ease-in;
+    margin: 10px 0 0 10px;
+    position: static;
+    transform: translateX(0) translateY(0);
+    background-color: whitesmoke;
+    width: 110px;
+    height: 100%;
+    z-index: 2;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: blue;
+    border-right-color: blue;
+    border-left-color: blue;
+    border-width: 1px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #04151d;
+    font-weight: bold;
+  }
+  .subButton2 P {
+    transition: ease-in;
+    margin: auto;
+  }
+
+  .subButton2:hover {
+    color: whitesmoke;
+    background-color: #04151d;
+    border-style: dashed;
+  }
+
+  .subButton2:hover p {
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 }
 

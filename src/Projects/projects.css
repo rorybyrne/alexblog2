@@ -2,11 +2,14 @@ html {
   overflow-x: hidden;
 }
 
-#octocat {
-  height: 200px;
-  width: 250px;
+.ProjectsTextBlock {
+  /* background-color: salmon; */
+  margin-top: 60px;
+  width: 100vw;
+  height: 300px;
   display: block;
-  margin: 100px auto;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .ProjectsText {
@@ -15,46 +18,66 @@ html {
   text-align: center;
   color: #04151d;
   letter-spacing: 1px;
-  display: inline-block;
+  display: block;
   padding: 20px;
   border: dashed blue;
   border-radius: 10px;
   border-style: dashed;
   border-width: 1px;
-  margin: 0px 200px 0px 750px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 40px auto 50px auto;
 }
 
-#colorBlock3 {
-  background-color: blue;
-  height: 15px;
-  width: 15px;
-  position: absolute;
-  transform: translateX(1155px) translateY(-70px);
+.GitHubApiBlock {
+  display: flex;
+  margin: 100px auto 20px auto;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 700px;
+  text-align: center;
+  color: #04151d;
+  letter-spacing: 1px;
+  padding: 20px;
+  border-color: whitesmoke;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-style: solid;
+  border-width: 1px;
 }
-#colorBlock4 {
-  background-color: salmon;
-  height: 15px;
-  width: 15px;
-  position: absolute;
-  transform: translateX(1165px) translateY(-75px);
+
+.GitHubApiItem {
+  margin: auto;
+}
+
+.Visit-Github-Block {
+  display: inline-flex;
+  margin: auto 5px 5px 30px;
+  height: 40px;
+  width: 100px;
+  justify-content: center;
+  background-color: #04151d;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+.Visit-Github-Block:hover {
+  animation: seeAllBlock 0.9s ease-in 0.2s;
+}
+
+.Visit-Github-Block-Text {
+  margin-top: -20px;
+  font-weight: bold;
+  color: salmon;
 }
 
 .grid {
   width: 1000px;
-  margin: 250px auto;
+  margin: 50px auto 250px auto;
 }
 
 .grid:hover {
-}
-
-.DownArrow {
-  animation: arrow 0.5s ease-in 3 3s;
-  height: 70px;
-  width: 70px;
-  display: block;
-  margin: 110px auto;
 }
 
 .ProjectsItems {
@@ -246,27 +269,38 @@ p.Read {
   transform: translateY(8px);
 }
 
-.form {
-  transform: translateX(-530px) translateY(60px);
-}
-
 #TechButton12 {
   margin: 30px 5px 5px 20px;
 }
 
+.form3 {
+  animation: form 0s;
+  transform: translateY(180px) translateX(-530px);
+  margin-bottom: 50px;
+}
+
 /* Keyframes */
 
-@keyframes arrow {
+@keyframes seeAllBlock {
   0% {
-    opacity: 0.8;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(10px);
   }
   50% {
-    opacity: 0.9;
-    transform: translateY(10px);
+    opacity: 1;
+    transform: translateX(6px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -274,51 +308,16 @@ p.Read {
 
 /* Mobile */
 
-@media (min-width: 320px) and (max-width: 850px) {
+@media (min-width: 320px) and (max-width: 750px) {
   html {
     overflow-x: hidden;
   }
-
-  /* 
-  
-  had issues with the page overflowing on the x-axis, primarily based on width of the TechStack div
-  
-  TODO reduce Techstack div's width & then to remobe this html styling. 
-  
-  */
-
-  #octocat {
-    width: 170px;
-    height: 150px;
-  }
-
-  /* Shrunk octocat vs. laptop size */
 
   .WholePage {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
-  #colorBlock3 {
-    background-color: blue;
-    display: none;
-    height: 15px;
-    width: 15px;
-    position: absolute;
-    transform: translateX(1155px) translateY(-70px);
-  }
-  #colorBlock4 {
-    background-color: salmon;
-    display: none;
-    height: 15px;
-    width: 15px;
-    position: static;
-    transform: translateX(0px) translateY(-50px);
-    margin-left: 80vw;
-    z-index: 1;
-  }
-
   /* Projects Grid Styling */
 
   .ProjectsTextBlock {
@@ -335,14 +334,40 @@ p.Read {
     transform: translateX(0px) translateY(0px);
   }
 
-  .DownArrow {
-    animation: arrow 0.5s ease-in 3 3s;
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin: 110px auto;
+  .GitHubApiBlock {
+    display: inline-block;
+    margin: 100px auto 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100vw;
+    text-align: center;
+    color: #04151d;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-color: whitesmoke;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-style: solid;
+    border-width: 1px;
   }
 
+  .Visit-Github-Block:hover {
+    animation: none;
+  }
+
+  .GitHubApiItem {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  #Github-Following-Item {
+    display: none;
+  }
+
+  .Visit-Github-Block {
+    display: none;
+  }
   .grid {
     width: 100vw;
     margin-top: 15px;
@@ -356,7 +381,7 @@ p.Read {
     display: block;
     margin: 0px auto 30px auto;
     height: 230px;
-    width: 70vw;
+    width: 285px;
     background-color: #04151d;
     border: solid salmon;
     border-radius: 10px;
@@ -391,6 +416,96 @@ p.Read {
     border-radius: 10px;
     transform: scale(1.1) rotateZ(90deg);
   }
+
+  .form3 {
+    display: block;
+    transform: translateY(0px) translateX(-0px);
+    text-align: center;
+    width: 100vw;
+    height: 38px;
+    margin-bottom: 40px;
+  }
+}
+
+/* if having issues, just delete block below!! */
+
+@media (min-width: 750px) and (max-width: 950px) {
+  .grid {
+    width: 100vw;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  .ProjectsItems {
+    display: inline-block;
+    margin: 15px 5px;
+    height: 230px;
+    width: 285px;
+    transition: 0.4s ease-in;
+    opacity: 0.95;
+    background-color: #04151d;
+    border: solid salmon;
+    border-radius: 10px;
+  }
+  .date {
+    transition: 0.3s ease-in;
+    color: gray;
+    font-size: 12px;
+    display: inline-block;
+    margin: 100px 20px 10px 25px;
+    transform: translateY(-30px);
+  }
+  .ProjectsItems {
+    transition: 0.3s ease-in;
+    opacity: 0.95;
+    display: inline-block;
+    margin: 22px 10px 20px 27px;
+    height: 250px;
+    width: 285px;
+    background-color: #04151d;
+    border: solid salmon;
+    border-radius: 10px;
+  }
+  .ProjectsItems:hover {
+    opacity: 1;
+    display: inline-block;
+    margin: 22px 10px 20px 27px;
+    height: 250px;
+    width: 285px;
+    background-color: #04151d;
+    border: solid salmon;
+    border-radius: 10px;
+    transform: scale(1.1) rotateZ(90deg);
+  }
+  .TechStack {
+    display: none;
+  }
+  .form3 {
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transform: translateY(0px) translateX(-0px);
+    text-align: center;
+    width: 100vw;
+    height: 38px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1250px) {
+  .form3 {
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(0px) translateX(-0px);
+    text-align: center;
+    width: 100vw;
+    height: 38px;
+  }
 }
 
 /* Laptop */
@@ -407,20 +522,6 @@ p.Read {
     margin: auto;
     display: inline;
     transform: translateX(0px) translateY(0px);
-  }
-  #colorBlock3 {
-    background-color: blue;
-    height: 15px;
-    width: 15px;
-    position: absolute;
-    transform: translateX(935px) translateY(-70px);
-  }
-  #colorBlock4 {
-    background-color: salmon;
-    height: 15px;
-    width: 15px;
-    position: absolute;
-    transform: translateX(945px) translateY(-75px);
   }
   .date {
     border: transparent;

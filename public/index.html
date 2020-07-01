@@ -27,6 +27,20 @@
     <title>Alex Mackenzie's Blog</title>
   </head>
   <body>
+    <form name="newsletterSubs" netlify netlify-honeypot="bot-field" hidden>
+      <input
+        className="emailInput"
+        placeholder="Your email"
+        name="email"
+        type="email"
+      />
+      <button
+        className="subButton"
+        name="button"
+        type="submit"
+        value="Subscribe"
+      ></button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

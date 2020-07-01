@@ -1,26 +1,12 @@
 // Global imports
 
-import React, { useEffect } from "react";
+import React from "react";
 
-import AOS from "aos";
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Style imports
 
-import "aos/dist/aos.css";
-
 // Component imports
-
-import Navbar from "../Navbar/navbar";
-import ImageHome from "../ImageHome/ImageHome";
-import HomeWriting from "../HomeWriting/HomeWriting";
 
 // Pages
 

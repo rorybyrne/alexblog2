@@ -193,6 +193,37 @@
   display: none;
 }
 
+.Features {
+  /* Display */
+  display: block;
+  width: 100vw;
+  transform: translateY(350px);
+  overflow: hidden;
+  /* Border */
+  border: blue dashed;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-width: 1px;
+  /* Text */
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.Features p {
+  /* Design */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  float: right;
+  transform: translateX(600px);
+  /* Text */
+  color: #04151d;
+  cursor: pointer;
+  /* Animation */
+  animation: Featured 10s ease-in 0.2;
+  animation-iteration-count: infinite;
+}
+
 /* Key Frames */
 
 @keyframes writingBlock {
@@ -247,6 +278,14 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+@keyframes Featured {
+  0% {
+    transform: translateX(600);
+  }
+  100% {
+    transform: translateX(-1420px);
   }
 }
 
@@ -347,10 +386,195 @@
   #navImage1 {
     display: none;
   }
+  .Features p {
+    /* Design */
+    padding-top: 20px;
+    padding-bottom: 30px;
+    float: right;
+    transform: translateX(600px);
+    /* Text */
+    color: #04151d;
+    cursor: pointer;
+    /* Animation */
+    animation: Featured 10s ease-in 0;
+    animation-iteration-count: infinite;
+  }
 }
 
-/* 
+@media (min-width: 850px) and (max-width: 1350px) {
+  .allWritingBlocks {
+    height: 1000px;
+    width: 100vw;
+    display: block;
+    position: static;
+    margin-top: 0px;
+    transform: translateY(-100px);
+  }
 
-TODO media queries for other screens / breaking points
+  #writingBlock1 {
+    line-height: 25px;
+    height: 370px;
+    width: 340px;
+    position: static;
+    margin: 40px 20px 0px 120px;
+  }
+  #writingBlock1 #text1 {
+    height: 40%;
+    width: 90%;
+    position: static;
+    margin: 50px auto -30px auto;
+  }
+  #writingBlock2 {
+    line-height: 25px;
+    height: 370px;
+    width: 340px;
+    position: static;
+    margin: 40px auto 0px auto;
+  }
+  #writingBlock2 #text2 {
+    height: 40%;
+    width: 90%;
+    position: static;
+    margin: 50px auto 24px auto;
+  }
+  .readMore2 {
+    font-weight: bold;
+    color: #04151d;
+    background-color: salmon;
+    display: inline-block;
+    margin: 50px 20px 0px 20px;
+  }
+  #writingBlock3 {
+    line-height: 25px;
+    height: 370px;
+    width: 340px;
+    position: static;
+    margin: 20px 20px 10px 120px;
+    display: inline-block;
+  }
+  #writingBlock3 #text3 {
+    height: 40%;
+    width: 90%;
+    position: static;
+    margin: 50px auto 24px auto;
+  }
+  #writingBlock4 {
+    animation: none;
+    line-height: 25px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: auto;
+    height: 130px;
+    width: 340px;
+    position: static;
+    margin: 0px auto 0px auto;
+    transform: translateY(-265px);
+  }
+  #writingBlock4 p {
+    margin: 20px 20px 50px 20px;
+  }
 
-*/
+  #writingBlock4:hover {
+    animation: none;
+  }
+
+  #writingBlock5 {
+    display: block;
+    align-items: center;
+    height: 210px;
+    width: 340px;
+    position: static;
+    margin: -590px 480px 20px;
+  }
+  #reactImage {
+    position: static;
+    transform: translateX(0px) translateY(0px) rotateZ(0deg);
+    background-color: transparent;
+    width: 140px;
+    height: 100px;
+    margin: -110px 0px 0px -20px;
+  }
+  #writingBlock5 p {
+    font-size: 14px;
+    line-height: 25px;
+    position: static;
+    width: 80%x;
+    height: 80%;
+    margin: 20px 20px 10px 20px;
+  }
+  #reactImage:hover {
+    position: static;
+    background-color: transparent;
+    transform: translateX(0px) translateY(0px) rotateZ(0deg);
+    width: 140px;
+    height: 100px;
+  }
+  .readMore2:hover {
+    border-bottom: 0px solid salmon;
+    padding-bottom: 0px;
+  }
+
+  #navImage1 {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+  #writingBlock3 {
+    line-height: 25px;
+    height: 370px;
+    width: 340px;
+    position: static;
+    margin: 40px 20px 0px 20px;
+    display: inline-block;
+  }
+  #writingBlock4 {
+    animation: none;
+    line-height: 25px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 118px;
+    margin-right: 10px;
+    height: 170px;
+    width: 180px;
+    position: static;
+    transform: translateY(-130px);
+  }
+  #writingBlock4 p {
+    margin: 20px 20px 50px 20px;
+  }
+
+  #writingBlock4:hover {
+    animation: none;
+  }
+
+  #writingBlock5 {
+    display: inline-block;
+    align-items: center;
+    height: 170px;
+    width: 440px;
+    position: static;
+    margin: 0px 0px 100px 10px;
+    transform: translateY(11px);
+  }
+  #reactImage {
+    position: static;
+    background-color: transparent;
+    width: 140px;
+    height: 100px;
+    margin: -110px 0px 0px -20px;
+  }
+  #writingBlock5 p {
+    font-size: 14px;
+    line-height: 25px;
+    position: static;
+    width: 90%;
+    height: 80%;
+    margin: 20px 20px 10px 20px;
+  }
+}

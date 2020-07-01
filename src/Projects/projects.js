@@ -1,19 +1,8 @@
 // react imports
 
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 // react scroll imports
-
-import { Link } from "react-scroll";
-
-// animate on scroll imports
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-// gsap imports
-
-import { TweenMax, Power3 } from "gsap";
 
 // component imports
 
@@ -25,8 +14,6 @@ import "./projects.css";
 
 // image imports
 
-import octocat from "./Octocat.png";
-import arrow from "./download.png";
 import react from "./React.png";
 import node from "./node.png";
 import graphql from "./GraphQL.png";
@@ -50,6 +37,10 @@ class projectsBlock extends React.Component {
   state = {
     email: "",
     buttonText: "Subscribe",
+    loading: true,
+    followers: null,
+    publicRepos: null,
+    following: null,
   };
 
   handleChange = (event) => {
@@ -57,34 +48,74 @@ class projectsBlock extends React.Component {
   };
 
   handleSubmit(event) {
-    event.preventDefault();
-
-    if (this.state.email) {
-      fetch(`/api/memberAdd?email=${this.state.email}`)
-        .then((res) => res.json())
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
-    }
+    // event.preventDefault();
 
     this.setState({
       buttonText: "Subscribed!",
     });
   }
 
+  async componentDidMount() {
+    const url = "https://api.github.com/users/AlexMackenzieWS";
+    // "https://api.github.com/repos/AlexMackenzieWS/alexblog2/stargazers";
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    console.log(data.following);
+    const followersData = await data.followers;
+    const publicReposData = await data.public_repos;
+    const followingData = await data.following;
+    this.setState({
+      loading: false,
+      followers: followersData,
+      publicRepos: publicReposData,
+      following: followingData,
+    });
+  }
+
+  // variables
+
+  // api is working, we're getting some json back -- if you want to get a specific property you just need to use dot notation.
+  //  use
+
   render() {
     return (
       <div className="WholePage">
-        <Navbar></Navbar>
-        <a href="https://github.com/AlexMackenzieWS">
-          <img id="octocat" src={octocat}></img>
-        </a>
+        <Navbar underlineNav="Projects"></Navbar>
         <div className="ProjectsTextBlock">
-          <p className="ProjectsText">Building > Reading.</p>
+          <p className="ProjectsText">Building > Reading</p>
+          <div className="GitHubApiBlock">
+            <p className="GitHubApiItem">
+              {this.state.loading ? (
+                <div>Fetching...</div>
+              ) : (
+                <div>👥 Followers: {this.state.followers}</div>
+              )}
+            </p>
+            <p className="GitHubApiItem">
+              {this.state.loading ? (
+                <div>Fetching...</div>
+              ) : (
+                <div>🏛 Repos: {this.state.publicRepos}</div>
+              )}
+            </p>
+            <p className="GitHubApiItem">
+              {this.state.loading ? (
+                <div>Fetching...</div>
+              ) : (
+                <div id="Github-Following-Item">
+                  🔭 Following: {this.state.followers}
+                </div>
+              )}
+            </p>
+            <button className="Visit-Github-Block">
+              <a href="https://github.com/AlexMackenzieWS" target="blank">
+                <p className="Visit-Github-Block-Text">GitHub →</p>
+              </a>
+            </button>
+          </div>
         </div>
-        <div id="colorBlock3" className="colorBlock"></div>
-        <div id="colorBlock4" className="colorBlock"></div>
-        <img className="DownArrow" href="#gridId" src={arrow}></img>
-        {/* <div id="connector1"></div> */}
+
         <div id="gridId" className="grid">
           <div className="ProjectsItems">
             <h2>The Code For This Blog 🖌</h2>
@@ -100,7 +131,10 @@ class projectsBlock extends React.Component {
               Campbell for reviewing, answering questions and showing interest
               in this.
             </p>
-            <a href="https://github.com/AlexMackenzieWS/alexblog2">
+            <a
+              href="https://github.com/AlexMackenzieWS/alexblog2"
+              target="blank"
+            >
               <p className="Read">Visit Repo →</p>
             </a>
             <h3 className="date">31/5/20</h3>
@@ -271,19 +305,28 @@ class projectsBlock extends React.Component {
               <a id="text2">Learning..</a>
             </div>
           </div>
-          <form className="form" onSubmit={this.handleSubmit}>
+          <form
+            className="form3"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            form-name="newsletterSubs"
+            name="newsletterSubs"
+            method="post"
+            /* netlify attribute */
+          >
+            <input type="hidden" name="form-name" value="newsletterSubs" />
             <input
               onChange={this.handleChange}
-              id="emailInput1"
               className="emailInput"
               value={this.state.email}
-              placeholder="  Your email"
+              placeholder="Your email"
+              name="email" /* netlify attribute */
               type="email"
             ></input>
             <button
               onClick={this.handleSubmit}
-              id="subButton1"
               className="subButton"
+              name="button"
               type="submit"
               value="Subscribe"
             >
@@ -297,6 +340,3 @@ class projectsBlock extends React.Component {
 }
 
 export default projectsBlock;
-
-// React, Northflank, 0Auth,
-//               Stripe, AWS.

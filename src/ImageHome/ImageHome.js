@@ -1,7 +1,7 @@
 // Global Imports
 
 import React from "react";
-import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // Style imports
 
@@ -10,11 +10,10 @@ import "./ImageHome.css";
 // Component imports
 
 import image1 from "./AlexImagePN.png";
-import Underline from "../Underline/underline";
 
 // MailChimp API
 
-const mailChimpApiKey = "29af470d6d9e2dc483b8eb67aa5d7478-us20";
+// const mailChimpApiKey = "29af470d6d9e2dc483b8eb67aa5d7478-us20";
 
 //Components
 
@@ -34,19 +33,14 @@ class ImageHome extends React.Component {
   };
 
   handleSubmit(event) {
-    event.preventDefault();
-
-    if (this.state.email) {
-      fetch(`/api/memberAdd?email=${this.state.email}`)
-        .then((res) => res.json())
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
-    }
+    // event.preventDefault();
 
     this.setState({
       buttonText: "Subscribed!",
     });
   }
+
+  // TODO add netlify forms to all other components within your site, currently they're still making POST requests
 
   render() {
     return (
@@ -68,7 +62,7 @@ class ImageHome extends React.Component {
               <br></br>
               <p id="paragraph2">
                 Welcome to the grand conclave of my interest set: Programming,
-                crypto, economics, venture, psychology, startups mexican food.
+                crypto, economics, venture, psychology, startups & mexican food.
               </p>
               <br></br>
               <p id="paragraph3" className=" textDescription">
@@ -85,19 +79,28 @@ class ImageHome extends React.Component {
         <div id="colorBlock1" className="colorBlock"></div>
         <div id="colorBlock2" className="colorBlock"></div>
         <div className="formDiv">
-          <form className="formtest" onSubmit={this.handleSubmit}>
+          <form
+            className="formtest"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            form-name="newsletterSubs"
+            name="newsletterSubs"
+            method="post"
+            /* netlify attribute */
+          >
+            <input type="hidden" name="form-name" value="newsletterSubs" />
             <input
               onChange={this.handleChange}
-              // id="emailInput1"
               className="emailInput"
               value={this.state.email}
               placeholder="Your email"
+              name="email" /* netlify attribute */
               type="email"
             ></input>
             <button
               onClick={this.handleSubmit}
-              // id="subButton1"
               className="subButton"
+              name="button"
               type="submit"
               value="Subscribe"
             >

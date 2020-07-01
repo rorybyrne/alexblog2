@@ -18,9 +18,24 @@ class ShareContent extends React.Component {
     return (
       <div className="ShareContent">
         <div className="MobileCenter">
-          <img id="image1" className="ShareLogos" src={spotify}></img>
-          <img id="image2" className="ShareLogos" src={apple}></img>
-          <img id="image2" className="ShareLogos" src={youtube}></img>
+          <img
+            alt="SpotifyLogo"
+            id="image1"
+            className="ShareLogos"
+            src={spotify}
+          ></img>
+          <img
+            alt="AppleLogo"
+            id="image2"
+            className="ShareLogos"
+            src={apple}
+          ></img>
+          <img
+            alt="YouTubeLogo"
+            id="image2"
+            className="ShareLogos"
+            src={youtube}
+          ></img>
           <div id="test">
             <a
               href="https://twitter.com/share?ref_src=twsrc%5Etfw"
@@ -28,7 +43,7 @@ class ShareContent extends React.Component {
               class="ShareLogos"
               data-show-count="false"
             >
-              <img id="TwitterLogo" src={twitter}></img>
+              <img alt="TwitterLogo" id="TwitterLogo" src={twitter}></img>
               <p id="TweetText">Tweet</p>
             </a>
           </div>

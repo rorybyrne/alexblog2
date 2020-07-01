@@ -1,5 +1,11 @@
 /* class styles */
 
+/* 
+
+TODO: add a color gradient to my grey block: linear-gradient(45deg,#e9e4f0,#d3cce3)
+
+*/
+
 .AlexImage1 {
   width: 250px;
   display: inline-block;
@@ -15,6 +21,7 @@
   width: 800.85px;
   height: 500px;
   background: #eceff1;
+  /*  linear-gradient(45deg,#e9e4f0,#d3cce3) */
   border-radius: 69px;
   clip-path: inset(20% at 40%);
   z-index: 3;
@@ -162,6 +169,7 @@
   width: 15px;
   position: absolute;
   transform: translateX(1150px) translateY(-475px);
+  display: none;
 }
 
 #colorBlock2 {
@@ -170,13 +178,16 @@
   width: 15px;
   position: absolute;
   transform: translateX(1160px) translateY(-480px);
+  display: none;
 }
 
 /* Key Frames */
 
 /* Media Queries */
 
-@media (min-width: 320px) and (max-width: 850px) {
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 1100px) {
   .AlexHomeImageDiv {
     align-items: center;
     align-content: center;
@@ -193,7 +204,7 @@
   }
   .textIntro {
     transform: translateX(0px) translateY(0px);
-    margin: 50px auto;
+    margin: 50px auto 0px auto;
     display: inherit;
     width: 350.85px; /*50*/
     height: 450px;
@@ -280,8 +291,189 @@
   }
 }
 
-/* 
+/* General Screen Breaking Points */
 
-TODO media queries for other screens / breaking points
+@media (min-width: 1000px) and (max-width: 1350px) {
+  /* AlexImage1 in process -- complete */
 
-*/
+  .AlexHomeImageDiv {
+    margin-bottom: 0px;
+    /* background-color: chartreuse; */
+  }
+
+  .AlexImage1 {
+    display: inline-block;
+    position: static;
+    margin: auto;
+    width: 220px;
+    margin: 160px 0px 20px 60px;
+    position: sticky;
+    z-index: 2;
+  }
+  .row1.textIntro {
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  /* in process */
+
+  .textIntro {
+    transform: translateX(0px) translateY(0px);
+    margin: 50px auto 0px auto;
+    display: inline-block;
+    width: 60vw; /*50*/
+    height: 450px;
+    text-align: left;
+    background-color: #eceff1;
+    border-radius: 69px;
+    position: static;
+  }
+  .textIntro p {
+    font-size: 11px;
+    text-align: left;
+    line-height: 25px;
+    width: 70%;
+    font-size: 14px;
+    display: inline-block;
+    color: gray;
+    background-color: #eceff1;
+    font-weight: bold;
+    margin: 15px 0px 10px 50px;
+  }
+  .textIntroCircle {
+    display: inline-block;
+    transform: translateY(130px) translateX(-220px);
+  }
+
+  #colorBlock1 {
+    background-color: blue;
+    height: 15px;
+    width: 15px;
+    margin: -535px 0px 0px 310px;
+    position: absolute;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  #colorBlock2 {
+    background-color: salmon;
+    height: 15px;
+    width: 15px;
+    margin: -540px 0px 0px 320px;
+    position: absolute;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  .formDiv {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    /* background-color: chartreuse; */
+    position: absolute;
+    transform: translateY(-140px);
+  }
+
+  .formtest {
+    width: 100vw;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  .subButton {
+    margin: 0 0 0 10px;
+    position: static;
+    transform: translateX(0) translateY(0);
+    background-color: whitesmoke;
+    width: 110px;
+    height: 100%;
+    z-index: 2;
+  }
+  .subButton P {
+    margin: auto;
+  }
+
+  .emailInput {
+    padding-left: 10px;
+    margin: 0.1px 0 0 0;
+    position: static;
+    width: 200px;
+    height: 92%;
+    transform: translateX(0) translateY(0);
+    z-index: 1;
+  }
+
+  .underline {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .textIntro {
+    transform: translateX(0px) translateY(-10px);
+    margin: 50px auto;
+    display: inline-block;
+    width: 60vw; /*50*/
+    height: 450px;
+    text-align: center;
+    background-color: #eceff1;
+    border-radius: 69px;
+    position: static;
+  }
+  .formtest {
+    width: 100vw;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    text-align: left;
+  }
+
+  .emailInput {
+    padding-left: 10px;
+    margin: 0.1px 0 0 0;
+    position: static;
+    width: 200px;
+    height: 92%;
+    transform: translateX(0) translateY(0);
+    z-index: 1;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1350px) {
+  .textIntro {
+    transform: translateX(0px) translateY(-10px);
+    margin: 50px auto;
+    display: inline-block;
+    width: 60vw; /*50*/
+    height: 450px;
+    text-align: center;
+    background-color: #eceff1;
+    border-radius: 69px;
+    position: static;
+  }
+  .formtest {
+    width: 100vw;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  .emailInput {
+    padding-left: 10px;
+    margin: 0.1px 0 0 0;
+    position: static;
+    width: 200px;
+    height: 92%;
+    transform: translateX(0) translateY(0);
+    z-index: 1;
+  }
+}

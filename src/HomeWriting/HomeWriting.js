@@ -1,9 +1,7 @@
 import React from "react";
 
 import "./HomeWriting.css";
-import { render } from "@testing-library/react";
 import reactImage from "../HomeWriting/React_logo.png";
-import northflankImage from "../HomeWriting/northflank.png";
 
 export default class HomeWriting extends React.Component {
   render() {
@@ -45,7 +43,12 @@ export default class HomeWriting extends React.Component {
             This website was built with React, Express.js and Netlify; three
             technologies that I'm pretty excited about.
           </p>
-          <img id="reactImage" src={reactImage}></img>
+          <img alt="ReactLogo" id="reactImage" src={reactImage}></img>
+        </div>
+        <div className="Features">
+          <a href="https://siliconangle.com/2020/06/25/covid-19-drags-venture-capitalists-hedge-bets-healthcare-tech-profits/">
+            <p>🗞 Featured in SiliconAngle 🗞</p>
+          </a>
         </div>
       </div>
     );
